@@ -6,7 +6,7 @@ require_once('./mobile_device_detect.php');
 
 $detect = new Mobile_Detect;
 
-if(!$detect->isMobile()) header("Location: ./midterm_redirect.html")
+if(!$detect->isMobile()) header("Location: ./Redirect.html")
 
 ?>
 <!DOCTYPE html>
@@ -14,7 +14,7 @@ if(!$detect->isMobile()) header("Location: ./midterm_redirect.html")
 <head>
 
 <meta charset="utf-8" />
-<title>PhoneGap with Splash and Icon</title>
+<title>UDLR - Up, Down, Left, Right</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -23,17 +23,6 @@ if(!$detect->isMobile()) header("Location: ./midterm_redirect.html")
 <script src="cordova.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.mobile.min.js"></script>
-
-<script type="text/javascript">
-
-$(document).ready(function(){
-  $("button.b1").click(function(){
-     $(this).html("I am changed");
-  });
-});
-
-
-</script>
 
 <style type="text/css">
 <!--
@@ -59,7 +48,7 @@ button {
 
 
   <div data-role="header" data-fullscreen="true">
-    <h1>Sample with Splash and Icon</h1>
+    <h1>UDLR</h1>
   </div>
 
   <div data-role=content>
